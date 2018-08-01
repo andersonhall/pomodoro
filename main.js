@@ -10,6 +10,8 @@ const breakUp = document.getElementById('breakUp');
 const audio = new Audio('sounds/ding.wav');
 const sessionDisplay = document.getElementById('sessionTimer');
 const breakDisplay = document.getElementById('breakTimer');
+const textBox = document.getElementById('textBox');
+textBox.textContent = "Press Start To Begin Session";
 
 // initialize timers
 let sessionTimer = 25;
@@ -66,6 +68,13 @@ function timeConvert(str) {
 }
 
 function startTimer() {
+  if (onBreak === false) {
+    textBox.textContent = "Get To Work";
+    textBox.style.color = "rgb(210, 50, 0)";
+  }
+  if (onBreak === true) {
+    textBox.textContent = "Take A Break";
+  }
   if (cancelled === true) {
     cancelled = false;
     timeRemaining = timeConvert(timer.textContent);
@@ -97,6 +106,7 @@ function decreaseTimer() {
 
 function stopTimer() {
   cancelled = true;
+  textBox.textContent = "Press Start To Resume";
   if (onBreak === false) {
     timeRemaining = sessionTimer * 60;
     sessionTime = timeRemaining;
@@ -111,6 +121,7 @@ function stopTimer() {
 
 function pauseTimer() {
   cancelled = true;
+  textBox.textContent = "Press Start To Resume";
 }
 
 // reset everything back to original settings
@@ -125,6 +136,8 @@ function resetTimer() {
   breakDisplay.textContent = "5";
   breakTimer = parseInt(breakDisplay.textContent);
   breakTime = breakTimer * 60
+  textBox.textContent = "Press Start To Begin Session";
+  textBox.style.color = "white";
 }
 
 function decreaseSession() {
@@ -172,6 +185,8 @@ function increaseBreak() {
 function takeBreak() {
   onBreak = true;
   timeRemaining = breakTime + 1;
+  textBox.textContent = "Take A Break";
+  textBox.style.color = "green";
 }
 
 function startSession() {
