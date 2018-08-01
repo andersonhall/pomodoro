@@ -41,6 +41,7 @@ body {
     border-top: 3px solid white;
     background-color: tomato;
     font-size: 1.6em;
+    padding: 20px 0;
 }
 
 #session,
@@ -61,7 +62,7 @@ span {
 #bottomControls {
     display: flex;
     justify-content: space-around;
-    margin: 50px;
+    margin: 30px;
 }
 
 i:hover {
@@ -76,4 +77,9 @@ i:hover {
     letter-spacing: 3px;
     justify-content: center;
     margin: 15px 0;
+}
+
+#textBox {
+    font-size: 2.5em;
+    letter-spacing: 1px;
 }
