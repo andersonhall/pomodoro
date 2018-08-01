@@ -8,35 +8,39 @@
 html,
 body {
     font-family: 'Acme', Arial, sans-serif;
-	background-color: rgb(158, 195, 255);
+	background-color: white;
+    color: white;
 }
 
 #container {
 	display: grid;
 	grid-template-rows: 1fr 1fr 4fr;
 	text-align: center;
-	height: 500px;
-	width: 450px;
-	margin: 150px auto;
-    border: 3px solid dodgerblue;
+	height: 700px;
+	width: 565px;
+	margin: 50px auto;
     border-radius: 10%;
     overflow: hidden;
-    background-color: lightgrey;
+    background-color: tomato;
+}
+
+#container:hover {
+  cursor: default;
 }
 
 #title {
 	grid-area: 1;
-	font-size: 3em;
-	padding: 30px;
+	font-size: 4em;
+	padding: 30px 0 15px;
 }
 
 #settings {
     display: flex;
     align-items: center;
 	grid-area: 2;
-    border-top: 2px solid dodgerblue;
-    background-color: lightgrey;
-    font-size: 1.3em;
+    border-top: 3px solid white;
+    background-color: tomato;
+    font-size: 1.6em;
 }
 
 #session,
@@ -49,26 +53,26 @@ span {
 }
 
 #timer {
-    border-top: 2px solid dodgerblue;
+    border-top: 2px solid white;
 	grid-area: 3;
-    padding: 30px;
 }
 
 #topControls,
 #bottomControls {
     display: flex;
     justify-content: space-around;
+    margin: 50px;
 }
 
 i:hover {
-    color: rgb(158, 195, 255);
+    color: rgb(210, 50, 0);
     cursor: pointer;
 }
 
 #mainDisplay {
     display: flex;
-    color: rgb(15, 191, 35);
-    font-size: 5em;
+    color: white;
+    font-size: 7em;
     letter-spacing: 3px;
     justify-content: center;
     margin: 15px 0;
