@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pomodoro Clock</title>
+	<meta name="description" content="Pomodoro Clock">
+	<meta name="author" content="Andy Hall">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">Pomodoro Clock</h1>
+	<div id="settings">
+      <div id="session">
+        <h3>Session</h3>
+        <div class="dial">
+		  <i class="fa fa-chevron-down fa-1x" id="sessionDown"></i>
+		  <span id="sessionTimer"></span>
+		  <i class="fa fa-chevron-up fa-1x" id="sessionUp"></i>
+        </div>
+      </div>
+      <div id="break">
+        <h3>Break</h3>
+        <div class="dial">
+		  <i class="fa fa-chevron-down fa-1x" id="breakDown"></i>
+		  <span id="breakTimer"></span>
+		  <i class="fa fa-chevron-up fa-1x" id="breakUp"></i>
+		</div>        
+      </div>
+    </div>
+    <div id="timer">
+      <div id="topControls">
+        <i class="fa fa-play fa-3x" id="play" title="Start the clock"></i>
+        <i class="fa fa-refresh fa-3x" id="refresh"></i>
+      </div>
+      <div id="mainDisplay">
+        <span id="mainTimer"></span>
+      </div>
+      <div id="bottomControls">
+        <i class="fa fa-pause fa-3x" id="pause"></i>
+        <i class="fa fa-stop fa-3x" id="stop"></i>
+      </div>
+    </div>
+  </div>  
+  
+  <script src="./main.js"></script>
+</body>
+</html>

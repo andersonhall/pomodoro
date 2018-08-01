@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'Acme', Arial, sans-serif;
+	background-color: rgb(158, 195, 255);
+}
+
+#container {
+	display: grid;
+	grid-template-rows: 1fr 1fr 4fr;
+	text-align: center;
+	height: 500px;
+	width: 450px;
+	margin: 150px auto;
+    border: 3px solid dodgerblue;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+
+#title {
+	grid-area: 1;
+	font-size: 3em;
+	padding: 30px;
+}
+
+#settings {
+    display: flex;
+    align-items: center;
+	grid-area: 2;
+    border-top: 2px solid dodgerblue;
+    background-color: lightgrey;
+    font-size: 1.3em;
+}
+
+#session,
+#break {
+    width: 50%;
+}
+
+span {
+    padding: 0 20px;
+}
+
+#timer {
+    border-top: 2px solid dodgerblue;
+	grid-area: 3;
+    padding: 30px;
+}
+
+#topControls,
+#bottomControls {
+    display: flex;
+    justify-content: space-around;
+}
+
+i:hover {
+    color: rgb(158, 195, 255);
+    cursor: pointer;
+}
+
+#mainDisplay {
+    display: flex;
+    color: rgb(15, 191, 35);
+    font-size: 5em;
+    letter-spacing: 3px;
+    justify-content: center;
+    margin: 15px 0;
+}
