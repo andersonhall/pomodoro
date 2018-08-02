@@ -11,7 +11,7 @@ const audio = new Audio('sounds/ding.wav');
 const sessionDisplay = document.getElementById('sessionTimer');
 const breakDisplay = document.getElementById('breakTimer');
 const textBox = document.getElementById('textBox');
-textBox.textContent = "Press Start To Begin Session";
+textBox.textContent = "Press Start To Begin";
 
 // initialize timers
 let sessionTimer = 25;
@@ -136,7 +136,7 @@ function resetTimer() {
   breakDisplay.textContent = "5";
   breakTimer = parseInt(breakDisplay.textContent);
   breakTime = breakTimer * 60
-  textBox.textContent = "Press Start To Begin Session";
+  textBox.textContent = "Press Start To Begin";
   textBox.style.color = "white";
 }
 

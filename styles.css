@@ -83,3 +83,28 @@ i:hover {
     font-size: 2.5em;
     letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 600px) {
+
+	#container {
+		border-radius: 0;
+		height: 100vh;
+		width: auto;
+		margin: 0 ;
+	}
+	#title {
+		font-size: 3em;
+		padding: 30px 0 0;
+		line-height: 1;
+	}
+	#mainDisplay {
+		margin: 0;
+		font-size: 4.5em;
+	}
+	#settings {
+		padding: 10px;
+	}
+	#topControls, #bottomControls {
+		margin: 30px 0;
+	}
+}
