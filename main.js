@@ -94,7 +94,9 @@ function decreaseTimer() {
         if (onBreak === false){
           takeBreak();
         } else {
-          startSession();
+			textBox.textContent = "Get To Work";
+			textBox.style.color = "rgb(210, 50, 0)";
+          	startSession();
         }
       }
     } else {
